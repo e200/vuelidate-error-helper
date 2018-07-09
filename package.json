@@ -1,0 +1,26 @@
+{
+  "name": "VuelidateErrorHelper",
+  "version": "1.0.0",
+  "description": "Vuelidate error helper",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e200/vuelidate-error-helper.git"
+  },
+  "keywords": [
+    "vuelidate",
+    "error",
+    "messages",
+    "helper",
+    "vue"
+  ],
+  "author": "Eleandro Duzentos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/e200/vuelidate-error-helper/issues"
+  },
+  "homepage": "https://github.com/e200/vuelidate-error-helper#readme"
+}
