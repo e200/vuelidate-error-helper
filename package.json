@@ -4,6 +4,7 @@
   "description": "Vuelidate error messages helper",
   "main": "src/index.js",
   "scripts": {
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/e200/vuelidate-error-helper/issues"
   },
-  "homepage": "https://github.com/e200/vuelidate-error-helper#readme"
+  "homepage": "https://github.com/e200/vuelidate-error-helper#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.52",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-uglify": "^3.0.0"
+  }
 }
