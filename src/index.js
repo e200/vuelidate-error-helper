@@ -1,7 +1,7 @@
 import messages from './messages'
 import mixin from './mixin'
 
-function plugin (Vue, options) {
+function install (Vue, options) {
   Vue.prototype.$VuelidateErrorHelper = {
     messages: options.messages
   }
@@ -9,4 +9,4 @@ function plugin (Vue, options) {
 
 export { messages, mixin }
 
-export default plugin
+export default install

@@ -1,6 +1,6 @@
 {
   "name": "vuelidate-error-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Vuelidate error messages helper",
   "main": "src/index.js",
   "scripts": {
