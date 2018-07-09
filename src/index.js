@@ -1,5 +1,5 @@
-const messages = require('./messages')
-const mixin = require('./mixin')
+import messages from './messages'
+import mixin from './mixin'
 
 function plugin (Vue, options) {
   Vue.prototype.$VuelidateErrorHelper = {
@@ -7,6 +7,6 @@ function plugin (Vue, options) {
   }
 }
 
-export default plugin
-
 export { messages, mixin }
+
+export default plugin
