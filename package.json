@@ -1,8 +1,8 @@
 {
   "name": "vuelidate-error-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vuelidate error messages helper",
-  "main": "src/index.js",
+  "main": "dist/vuelidate-error-helper.min.js",
   "scripts": {
     "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
