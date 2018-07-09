@@ -1,6 +1,11 @@
+const requiredMessage = 'This field is required'
+
 export default {
   required: function () {
-    return 'This field is required'
+    return requiredMessage
+  },
+  requiredIf: function () {
+    return requiredMessage
   },
   minLength: function (rule) {
     return `This field requires at least ${rule.min} characters`
