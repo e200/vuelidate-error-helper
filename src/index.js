@@ -1,9 +1,12 @@
-const install = function (Vue, options) {
+const messages = require('./messages')
+const mixin = require('./mixin')
+
+function plugin (Vue, options) {
   Vue.prototype.$VuelidateErrorHelper = {
     messages: options.messages
   }
 }
 
-export const VuelidateErrorHelper = install
+export default plugin
 
-export default install
+export { messages, mixin }
