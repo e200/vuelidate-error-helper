@@ -4,9 +4,17 @@ let gulp   = require('gulp')
     rename = require('gulp-rename')
 
 gulp.task('default', function () {
-  return gulp.src('./src/index.js')
-    .pipe(babel())
-    .pipe(uglify())
-    .pipe(rename('vuelidate-error-helper.min.js'))
-    .pipe(gulp.dest('./dist'))
+  return gulp.src([
+    './src/index.js',
+    './src/messages.js',
+    './src/mixin.js'
+  ])
+  .pipe(babel())
+  .pipe(uglify())
+  .pipe(rename(function (path) {
+    if (path.basename === 'index') {
+      path.basename = 'vuelidate-error-helper'
+    }
+  }))
+  .pipe(gulp.dest('./dist'))
 })

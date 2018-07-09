@@ -1,4 +1,4 @@
-const requiredMessage = 'This field is required'
+var requiredMessage = 'This field is required'
 
 export default {
   required: function () {
