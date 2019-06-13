@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = {
   entry: {
     index: './src/index.js',
-    lang: './src/lang/index.js'
+    mixin: './src/mixin.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
