@@ -10,7 +10,7 @@ Easily get error messages from vuelidate with this helper
 
 First add the package to your Vue app
 
-```vue
+```js
 import Vue from 'vue'
 import Vuelidate from 'vuelidate'
 
@@ -26,16 +26,10 @@ Vue.use(VuelidateErrorHelper, {
 })
 ```
 
-```vue
+```html
 <template>
   <form>
-    <label
-      v-if="hasError($v.name)"
-      for="name-input"
-      class="error-label"
-    >
-      firstError($v.name)
-    </label>
+    <label v-if="hasError($v.name)" for="name-input" class="error-label" v-text="firstError($v.name)" />
 
     <input id="name-input" placeholder="Name..." @input="$v.name.$touch()" />
   </form>
